@@ -1,0 +1,13 @@
+<h1><%= @id.author %></h1>
+
+<%= form_tag "/user/#{@id.id}", method: "patch" do %>
+  <input type="text" name="author" value="<%= @id.author %>" />
+  <input type="text" name="content" value="<%= @id.content %>" />
+  <input type="submit" value="Modifier le livre" />
+<% end %>
+<%= form_tag "/user/#{@id.id}", method: "delete" do %>
+  <input type="submit" value="Supprimer le livre" />
+<% end %>
+
+<p><a href="/user">Retourner à l’index</a></p>
+

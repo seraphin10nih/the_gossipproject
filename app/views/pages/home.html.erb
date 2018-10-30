@@ -1,0 +1,11 @@
+<h1>BIENVENUE SUR NOTRE PREMIERE PAGE</h1>
+
+<p>Nous traversons une ère où l'informatique est omniprésente et indispensable par-dessus tout. Si les technologies ont pris une place importante, elles ont néanmoins créé un nombre d'emploi important, et un grand nombre de formation allant avec. Avec ce test, vois si des affinités entre toi et ce secteur peuvent se créer.</p>
+
+<%= form_tag "/", method: "post" do %>
+	<div> Author : <input type="text" name="author" class="form-control" /> </div>
+
+	<div> Content :<input type="text" name="content" class="form-control"/> </div>
+ <br>
+	<input type="submit" value="Ajouter le livre" class="btn btn-default" />
+<% end %>

@@ -1,0 +1,4 @@
+<p>Bonjour , Voici la liste des auteurs  et leurs contenus</p>
+<% @books.each do |un_livre| %>
+  <p><%= un_livre.author %> : <%= un_livre.content %></p>
+<% end %>
